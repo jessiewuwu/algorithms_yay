@@ -17,14 +17,18 @@ A place to keep all the algorithm exercises I've done.
 - push() appends an item to the end of the array
 - pop() removes and returns the last item in the array
 
-``` stack.add = stack.push(somethang);
-stack.remove = stack.pop();```
+```javascript
+stack.add = stack.push(somethang);
+stack.remove = stack.pop();
+```
 
-```var stack = [];
+```javascript
+var stack = [];
 stack.push(2);       // stack is now [2]
 stack.push(5);       // stack is now [2, 5]
 var i = stack.pop(); // stack is now [2]
-alert(i);            // displays 5```
+alert(i);            // displays 5
+```
 
 ## queue
 - first in, first out
@@ -33,11 +37,15 @@ alert(i);            // displays 5```
 - push() inserts the passed argument at the end of the array 
 - shift() removes and returns the first item
 
-```queue.add = queue.push;
-queue.remove = queue.shift();```
+```javascript
+queue.add = queue.push;
+queue.remove = queue.shift();
+```
 
-```var queue = [];
+```javascript
+var queue = [];
 queue.push(2);         // queue is now [2]
 queue.push(5);         // queue is now [2, 5]
 var i = queue.shift(); // queue is now [5]
-alert(i);              // displays 2```
+alert(i);              // displays 2
+```
