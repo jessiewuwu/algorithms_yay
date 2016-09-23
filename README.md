@@ -9,13 +9,14 @@ A place to keep all the algorithm exercises I've done.
 - `array.pop()` - removes and returns the last element
 - `array.slice(fromThisIndex, rightBeforeThisIndex)` - returns a new array with values from start and end paramenters
 - `array.splice(index, deleteCount, addThis)` - returns a new array with value at index and the # of elements deleted, and replacing it with addThis value
+- Careful: "In-place" does not mean "without creating any additional variables"! Rather, it means "without creating a new copy of the input." In general, an in-place function will only create additional variables that are O(1) space.
 
 ## stack
 - first in, last out
 - one way: `unshift()` and `shift()`
 - another way: `push()` and `pop()`
-- push() appends an item to the end of the array
-- pop() removes and returns the last item in the array
+- `push()` appends an item to the end of the array
+- `pop()` removes and returns the last item in the array
 
 ```javascript
 stack.add = stack.push(somethang);
@@ -34,8 +35,8 @@ alert(i);            // displays 5
 - first in, first out
 - one way: `unshift()` and `pop()`
 - another way: `push()` and `shift()`
-- push() inserts the passed argument at the end of the array 
-- shift() removes and returns the first item
+- `push()` inserts the passed argument at the end of the array 
+- `shift()` removes and returns the first item
 
 ```javascript
 queue.add = queue.push;
