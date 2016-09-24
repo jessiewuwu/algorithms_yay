@@ -41,7 +41,7 @@ OR Start from outside in until start pointer is greater than or equal to end poi
 
 
 APPROACH 2: W/ RECURSION
-- the key is to reverse all the characters first and then reverse the words back. the reason why is related to space and time O(n) where if you just swap the words, there's a problem with shifting words of different lengths...?!
+- the key is to reverse all the characters first and then reverse the words back. the reason why is related to space and time O(n) where if you just swap the words, there's a problem with shifting words of different lengths. The naive solution of reversing the words one at a time had a worst-case O(n^2)runtime. That's because swapping words with different lengths required "scooting over" all the other characters to make room.
 - By reversing the characters instead of words, it gives us the right word order but with each word backwards
 
 reverseWords function
@@ -98,8 +98,6 @@ var reverseCharacters = function(messageArray, startIndex, endIndex) {
 
 
 console.log(reverseWord("the sky is red"))
-
-
 
 
 
