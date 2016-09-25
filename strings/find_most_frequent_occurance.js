@@ -1,8 +1,8 @@
 /*
 Given a string, return the character that appears the most.
 
-Time:
-Space: 
+Time: O(n)
+Space: O(n)
 
 1. Instantiate a hash variable. 
 2. Iterate through the string
@@ -41,4 +41,3 @@ var mostFreqOccurance = function(str) {
 }
 
 console.log(mostFreqOccurance("kissEEEees"));
-console.log("HI".toLowerCase())
