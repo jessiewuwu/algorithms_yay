@@ -7,9 +7,20 @@ A place to keep all the algorithm exercises I've done.
 - `array.push(sumthing)` - adds to the end of the array
 - `array.shift()` - removes and returns the first element
 - `array.pop()` - removes and returns the last element
+- Use `slice` instead of `delete` to delete an item from an array. Using `delete` replaces the item with `undefined` instead of removing it from the array
 - `array.slice(fromThisIndex, rightBeforeThisIndex)` - returns a new array with values from start and end paramenters
 - `array.splice(index, deleteCount, addThis)` - returns a new array with value at index and the # of elements deleted, and replacing it with addThis value
-- Careful: "In-place" does not mean "without creating any additional variables"! Rather, it means "without creating a new copy of the input." In general, an in-place function will only create additional variables that are O(1) space.
+- Careful: "In-place" does not mean "without creating any additional variables"! Rather, it means "without creating a new copy of the input." In general, an in-place function will only create additional variables that are O(1) space
+- `Array.prototype.push.apply(array1, array2)` - to combine two arrays. array1 now has array2 appended to it. Calling the method returns the length tho
+- `Number.isInteger(35)` returns true if the arugment is an integer
+- `Array.isArray([35])` returns true if the argument is an array
+- Get the max or the min of an array of numbers
+```javascript
+var numbers = [5, 458, -215];
+var maxInNumbers = Math.max.apply(Math, numbers);
+var minInNumbers = Max.min.apply(Math, numbers);
+```
+- Get the max or the min of two numbers: `Math.min(25,2)`, `Math.max(25,2)`
 
 ## stack
 - first in, last out
