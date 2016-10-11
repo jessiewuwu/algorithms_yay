@@ -18,9 +18,9 @@ var mergeSortedArrays = function(arr1, arr2) {
   var p1 = 0;
   var p2 = 0;
 
-  if(p1 === arr1.length ) {
+  if(p1 === arr1.length - 1) {
     result = result.concat(arr2.slice(p2));
-  } else if (p2 === arr2.length ) {
+  } else if (p2 === arr2.length - 1) {
     result = result.concat(arr1.slice(p1));
   }
 
